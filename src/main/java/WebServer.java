@@ -65,7 +65,7 @@ public class WebServer implements Runnable {
                         fileRequested += HTML_FILE;
                     }
 
-                    else if (fileRequested.endsWith(".json/")){
+                    else if (fileRequested.endsWith("/json/")){
                         fileRequested += JSON_FILE;
                     }
 
@@ -91,12 +91,12 @@ public class WebServer implements Runnable {
                 }
 
                     if(verbose) {
-                        System.out.println("\nWorking Properly\n");
+                        System.out.println("\nStatus: Working\n");
                         System.out.println("HTTP/1.1 200 OKAY");
                         System.out.println("Server: Web Server");
                         System.out.println("Date: " + new Date());
                         System.out.println("File: " + fileRequested );
-                        System.out.println("Type: " + content);
+                        System.out.println("Content-Type: " + content);
                         System.out.println("Content-Length: " + fileLength);
 
             } }
