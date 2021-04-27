@@ -1,0 +1,336 @@
+ body {
+     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+     background-size: 400% 400%;
+     animation: gradient 15s ease infinite;
+ }
+
+ @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+ }
+
+p {
+  font-size: 15px;
+  color:#fff;
+  font-weight:400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: #707070;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+a {
+  color: #172B8E;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #172B8E;
+}
+
+.notice a {
+  font-weight: 500;
+}
+
+.logo .logo-Insta a {
+  text-decoration: none;
+  color: #707070;
+}
+
+.logo .logo-Portfolio a {
+  text-decoration: none;
+  color: #172B8E;
+}
+
+.logo-tagline {
+  font-weight: bold;
+}
+
+.logo-Insta, .logo-Portfolio {
+  font-size: 40px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.logo-Insta {
+  margin-left: -100px;
+}
+
+.welcome-logo-Insta {
+  margin-left: -180px;
+}
+.logo-Portfolio {
+  color: #172B8E;
+  margin-top: -20px;
+}
+
+.welcome {
+  font-size: 70px;
+}
+
+.welcome-tagline {
+  font-size: 20px;
+}
+
+.form-login-signup {
+  border-radius: 20px;
+  padding: 20px 30px;
+  background-color: #F9F9F9;
+}
+
+.login-help p {
+  font-weight: 500;
+}
+
+.login-help p a {
+  color: #707070;
+  font-weight: bold;
+}
+.btn-login-signup {
+  background: #172B8E;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttons a {
+  color: #707070;
+  font-weight: 500;
+
+}
+
+.buttons p {
+  font-size: 13px;
+}
+
+.btn-login-signup:hover {
+  color: #fff;
+}
+
+.login-signup-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #F9F9F9;
+}
+.login-signup-footer p {
+  font-weight: 500;
+}
+
+.login-signup-footer a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-links {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.welcome-login {
+  background-color: transparent;
+  color: #fff !important;
+  border: 1px solid #F9F9F9;
+}
+
+.welcome-login:hover {
+  background: #172B8E;
+  color: #fff;
+  border: 1px solid #172B8E;
+}
+
+.welcome-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #F9F9F9;
+}
+
+.welcome-footer a {
+  color: #707070;
+
+}
+
+.username {
+  color: #707070;
+  font-weight: 500;
+}
+
+.welcome-footer a:hover {
+  font-weight: 500;
+}
+
+.profileinfo {
+  max-height: 550px;
+}
+
+.profileinfo p {
+  margin-bottom: 2px;
+}
+.profileinfo img {
+  width: 110px;
+  border-radius: 50%;
+}
+
+.box {
+  border: 1px solid #fff;
+  height: 350px;
+  background-color: #F9F9F9;
+}
+
+.portfolio-url {
+    background: #172b8e;
+    color: #fff;
+    border-radius: 20px;
+    padding: 3px 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.portfolio-url a {
+  color: #fff;
+}
+
+
+.box-portfolio {
+  border: 1px solid #fff;
+  height: 1050px;
+  background-color: #F9F9F9;
+}
+
+.btn-share {
+  background: #fff;
+  border: 1px solid #f9f9f9;
+  padding: 5px 20px;
+}
+
+.btn-share:hover {
+  background-color: #f9f9f9;
+}
+.btn-comment {
+    background: #172b8e;
+    color: #fff;
+    padding: 4px 20px;
+}
+
+.btn-comment:hover {
+    color: #fff;
+}
+
+.comment-form {
+  border: 1px solid #f9f9f9;
+}
+
+.profile-url a {
+  text-decoration: underline;
+  color: #707070;
+  font-weight: 500;
+}
+
+
+.insta {
+  color: #707070;
+  font-weight: bold;
+}
+
+.portfolio {
+  color: #172B8E;
+}
+
+.aboutme {
+  font-weight: 500;
+}
+.myaccount {
+  width: 20px;
+  border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: -ms-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px 20;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    float: none;
+    margin-left: -100px;
+}
+
+.profilebio {
+  display: none;
+}
+
+.dropdown-menu {
+    border: 1px solid rgb(249, 249, 249);
+}
+
+}
+@media (min-width: 992px) {
+  .dropdown-menu {
+  border: 1px solid rgb(249, 249, 249);
+  margin-left: -70px;
+  }
+}
+
+
+.dropdown-divider {
+  border: 1px solid rgb(249, 249, 249);
+}
+
+.nav-item a {
+  font-size: 14px;
+}
+
+.navbar-toggler {
+    padding: .20rem .50rem;
+    font-size: 0.8rem;
+  }
+
+  .fab {
+      font-size: 30px;
+      padding: 0px 2px;
+      color: #cecece;
+
+  }
+
+  .navbar-brand-footer {
+    font-size: 13px;
+  }
+
+
+.footer {
+margin-top: 10px;
+margin-bottom:10px;
+color: #fff;
+}
+
+.status-code {
+margin-top:-5px;
+}
+

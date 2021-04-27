@@ -1,0 +1,10 @@
+{
+  "conFig": {
+    "Server": "Web Server",
+    "Status Code": "HTTP/1.1 200 OKAY",
+    "Port": 8080,
+    "Request URL": "http://localhost:8080/",
+    "Request Method": "GET",
+    "Favicon":  "src/main/java/favicon.ico"
+  }
+}

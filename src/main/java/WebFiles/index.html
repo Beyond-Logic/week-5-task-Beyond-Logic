@@ -2,25 +2,36 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="src/main/java/WebFiles/bootstrap.min.css">
-    <link rel="stylesheet" href="src/main/java/WebFiles/style.css">
-    <link rel="icon" type="image/png" href="#">
-    <title>WebServer</title>
+    <link rel="stylesheet" href="src/main/java/WebFiles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/main/java/WebFiles/css/style.css">
+    <link rel="shortcut icon" href="src/main/java/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="src/main/java/favicon.ico" type="image/x-icon">
+
+    <title>WebServer | 8080</title>
 </head>
 <body>
+<div>
+<embed name ="WebserverPlay" src ="src/main/java/WebFiles/media/TextToSpeech.mp3"
+       type="audio/mpeg" loop="false" hidden="true" autostart="true">
+
+    <embed name ="WebserverPlay1" src ="src/main/java/WebFiles/media/LoyaltyFreakMusicEveryone_Is_so_alive.mp3"
+       type="audio/mpeg" loop="false" hidden="true" autostart="true">
+</div>
+
 <div class="container">
     <div class="row mt-5">
         <div class="col-md-3">
 
         </div>
         <div class="col-md-6 text-center">
-            <div class="logo">
+            <div class="logo typewriter">
                 <h1 class="welcome welcome-logo-Insta logo-Insta mt-5">localhost</h1>
                 <h1 class="welcome logo-Portfolio">Web Server</h1>
-                <p class="welcome-tagline logo-tagline mt-4 mb-5">Port: 7070</p>
-                <p class="welcome-tagline logo-tagline mt-4 mb-5">Status Code: 200 OKAY<br>
+                <p class="welcome-tagline logo-tagline mt-4 mb-5 animation-text anim-typewriter">Port: 8080</p>
+                <p class="welcome-tagline logo-tagline mt-4 mb-5 animation-text anim-typewriter">HTTP/1.1<br>
+                Status Code: <img class="status-code" src="src/main/java/WebFiles/images/green-circle-16.png" alt="green-icon"> 200 OKAY<br>
                     Server: Web Server<br>
-                    Request URL: http://localhost:7070/<br>
+                    Request URL: http://localhost:8080<br>
                     Request Method: GET<br>
                     File: /src/main/java/WebFiles/index.html<br>
                     Content-Type: text/html<br>
@@ -44,7 +55,7 @@
     </div>
 
     <div class="welcome-footer">
-       <center><h5 class="footer">WebServer</h5></center>
+       <center><h5 class="footer">Localhost | WebServer | Port: 8080 - Designed by <b>Edema</b></h5></center>
     </div>
 </div>
 </body>
