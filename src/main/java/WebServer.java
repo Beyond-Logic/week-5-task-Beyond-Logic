@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class WebServer implements Runnable {
 
-    static final File WEB_ROOT = new File(".");
+    String WEB_ROOT = (".");
     String HTML_FILE = ("src/main/java/WebFiles/index.html");
     String JSON_FILE = ("src/main/java/WebFiles/conFig.json");
     static  int PORT = 8080;
@@ -147,6 +147,7 @@ public class WebServer implements Runnable {
 
 
     private String getContentType(String fileRequested){
+        //Mime Types
         if(fileRequested.endsWith(".htm") || fileRequested.endsWith(".html"))
             return "text/html";
         else if(fileRequested.endsWith(".css"))

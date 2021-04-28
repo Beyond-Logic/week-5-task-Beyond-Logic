@@ -1,4 +1,3 @@
-import java.io.*;
 import java.net.Socket;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,9 +7,9 @@ class WebServerTest {
     @org.junit.jupiter.api.Test
     void main() {
 
-        final File WEB_ROOT = new File(".");
-        final File HTML_FILE = new File("src/main/java/WebFiles/index.html");
-        final File JSON_FILE = new File("src/main/java/WebFiles/conFig.json");
+        String WEB_ROOT = (".");
+        String HTML_FILE = ("src/main/java/WebFiles/index.html");
+        String JSON_FILE = ("src/main/java/WebFiles/conFig.json");
         int PORT = 8080;
         final boolean verbose = true;
         final Socket connect = new Socket();
@@ -18,11 +17,14 @@ class WebServerTest {
         assertEquals(8080, PORT);
         assertNotEquals(7070, PORT);
 
-        assertEquals(WEB_ROOT, WEB_ROOT);
-        assertNotEquals(HTML_FILE, WEB_ROOT);
+        assertEquals(WEB_ROOT, ".");
+        assertNotEquals("..", WEB_ROOT);
 
-        assertEquals(JSON_FILE, JSON_FILE);
-        assertNotEquals(HTML_FILE, JSON_FILE);
+        assertEquals(HTML_FILE, "src/main/java/WebFiles/index.html");
+        assertNotEquals("src/main/java/WebFiles/index.html1", HTML_FILE);
+
+        assertEquals(JSON_FILE, "src/main/java/WebFiles/conFig.json");
+        assertNotEquals("src/main/java/WebFiles.conFigs.json", JSON_FILE);
 
         assertEquals(connect, connect);
 
